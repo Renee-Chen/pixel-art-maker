@@ -14,14 +14,11 @@ colorPicker.addEventListener("input", function(event) {
   color = document.getElementById("colorPicker").value;
 });
 
-//draw the grid when Submit button is clicked
-document.getElementById("button").addEventListener("click", makeGrid);
-
-//draw the grid on Enter/Return key press
-document.getElementById("sizePicker").addEventListener("keypress", function(event) {
-  if (event.keyCode === 13) {
+//draw the grid when Submit is clicked or Enter/Return key is pressed
+const sizePicker = document.querySelector("#sizePicker");
+sizePicker.addEventListener("submit", function(e) {
+    e.preventDefault();
     makeGrid();
-  }
 });
 
 /**
@@ -32,27 +29,14 @@ document.getElementById("sizePicker").addEventListener("keypress", function(even
 function makeGrid() {
 
   //clear the existing table rows
-  while (table.rows.length > 0) {
-    table.deleteRow(0);
-  }
+  // while (table.rows.length > 0) {
+  //   table.deleteRow(0);
+  // }
+  table.innerHTML = '';
 
   //get the user input values for grid height and grid width
   gridHeight = document.getElementById("input-height").value;
   gridWidth = document.getElementById("input-width").value;
-
-
-  /* check for negative inputs, input greater than max grid dimensions.
-   * This is to prevent cramping of cells to fit to the screen.
-   */
-  if(gridHeight > MAX_GRID_HEIGHT || gridHeight <= 0) {
-  	window.alert(GRID_HEIGHT_ERROR);
-  	return;
-  }
-
-  if(gridWidth > MAX_GRID_WIDTH || gridWidth <= 0) {
-  	window.alert(GRID_WIDTH_ERROR);
-  	return;
-  }
 
   //draw table grid and add event listener for each cell
   for (let i = 0; i < gridHeight; i++) {
@@ -61,7 +45,7 @@ function makeGrid() {
       let cell = row.insertCell(j);
 
       //to change background color when user clicks
-      cell.addEventListener("mousedown", function(event) {
+      cell.addEventListener("click", function(event) {
         cell.style.backgroundColor = color;
       });
 
