@@ -1,8 +1,8 @@
-// CONST declarations
-const MAX_GRID_HEIGHT = 50;
-const MAX_GRID_WIDTH = 50;
-const GRID_HEIGHT_ERROR = `Grid height should be greater than zero and less than ${MAX_GRID_HEIGHT}`;
-const GRID_WIDTH_ERROR = `Grid width should be greater than zero and less than ${MAX_GRID_WIDTH}`;
+// // CONST declarations
+// const MAX_GRID_HEIGHT = 50;
+// const MAX_GRID_WIDTH = 50;
+// const GRID_HEIGHT_ERROR = `Grid height should be greater than zero and less than ${MAX_GRID_HEIGHT}`;
+// const GRID_WIDTH_ERROR = `Grid width should be greater than zero and less than ${MAX_GRID_WIDTH}`;
 
 //variable declarations
 let color, gridHeight, gridWidth;
