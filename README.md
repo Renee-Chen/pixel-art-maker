@@ -1,16 +1,13 @@
 # Pixel Art Maker Project
+This is a simple pixel art maker project developed using Javascript for Udacity's FEND program. Live version is (here)[https://gayakrish.github.io/portfolio_project]
 
-## Table of Contents
+## How to Launch
+To launch the application:
+(1) Download, extract and open the index.html in the browser (or)
+(2) Launch the live link from the browser
 
-* [Instructions](#instructions)
-* [Contributing](#contributing)
-
-## Instructions
-
-To get started, open `designs.js` and start building out the app's functionality.
-
-For specific, detailed instructions, look at the project instructions in the [Udacity Classroom](https://classroom.udacity.com/me).
-
-## Contributing
-
-This repository is the starter code for _all_ Udacity students. Therefore, we most likely will not accept pull requests.
+## Main Features
+(1) The user can enter the grid size of his choice.
+(2) A ColorPicker is launched when the user tries to change and pick colors.
+(3) On clicking a cell twice, the cell color reverts to white.
+(4) "Reset" button will bring the app back to the empty screen.
