@@ -1,5 +1,5 @@
 # Pixel Art Maker Project
-This is a simple pixel art maker project developed using Javascript for Udacity's FEND program. Live version is [here](https://gayakrish.github.io/portfolio_project)
+This is a simple pixel art maker project developed using Javascript for Udacity's FEND program. Live version is [here](https://gayakrish.github.io/pixel-art-maker)
 
 ## How to Launch
 To launch the application:
